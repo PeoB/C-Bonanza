@@ -1,0 +1,12 @@
+﻿<Window x:Class="LastClickedControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Click any window/childwindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Last window clicked: " Margin="0 0 10 0"></TextBlock><TextBlock Text="{Binding Title}" Grid.Column="1" />
+    </Grid>
+</Window>
